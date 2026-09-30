@@ -1,0 +1,156 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="amazon-header">
+        <nav class="navbar-main" aria-label="Amazon Main Navigation">
+            <div class="nav-logo-container nav-box">
+                <a href="/" class="nav-logo-link" aria-label="Amazon India Home">
+                    <img src="{% static 'images/amazon_logo.png' %}"
+                        onerror="this.style.display='none'; document.getElementById('amazon-text-fallback').style.display='flex';"
+                        alt="Amazon.in" class="amazon-logo-img" />
+                    <div id="amazon-text-fallback" class="nav-logo-wrap" style="display: none;">
+                        <span class="logo-main-text">amazon<span class="logo-domain">.in</span></span>
+                        <span class="logo-prime-badge">prime</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="nav-location nav-box" role="button" tabindex="0" title="Choose your delivery location">
+                <i class="fa-solid fa-location-dot location-icon"></i>
+                <div class="nav-text-col">
+                    <span class="nav-line-1">Delivering to Sonipat 131021</span>
+                    <span class="nav-line-2">Update location</span>
+                </div>
+            </div>
+
+            <div class="nav-search" role="search">
+                <div class="search-category-wrap">
+                    <select class="search-select" aria-label="Select Category">
+                        <option value="all">All</option>
+                        <option value="alexa-skills">Alexa Skills</option>
+                        <option value="amazon-devices">Amazon Devices</option>
+                        <option value="amazon-fashion">Amazon Fashion</option>
+                        <option value="amazon-fresh">Amazon Fresh</option>
+                        <option value="amazon-pharmacy">Amazon Pharmacy</option>
+                        <option value="appliances">Appliances</option>
+                        <option value="apps-games">Apps & Games</option>
+                        <option value="baby">Baby</option>
+                        <option value="beauty">Beauty</option>
+                        <option value="books">Books</option>
+                        <option value="car-motorbike">Car & Motorbike</option>
+                        <option value="clothing">Clothing & Accessories</option>
+                        <option value="computers">Computers & Accessories</option>
+                        <option value="deals">Deals</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="furniture">Furniture</option>
+                        <option value="garden">Garden & Outdoors</option>
+                        <option value="gift-cards">Gift Cards</option>
+                        <option value="grocery">Grocery & Gourmet Foods</option>
+                        <option value="health">Health & Personal Care</option>
+                        <option value="home-kitchen">Home & Kitchen</option>
+                        <option value="luggage">Luggage & Bags</option>
+                        <option value="movies-tv">Movies & TV Shows</option>
+                        <option value="music">Music</option>
+                        <option value="office-products">Office Products</option>
+                        <option value="pet-supplies">Pet Supplies</option>
+                        <option value="prime-video">Prime Video</option>
+                        <option value="shoes">Shoes & Handbags</option>
+                        <option value="software">Software</option>
+                        <option value="sports">Sports, Fitness & Outdoors</option>
+                        <option value="tools">Tools & Home Improvement</option>
+                        <option value="toys">Toys & Games</option>
+                        <option value="video-games">Video Games</option>
+                        <option value="watches">Watches</option>
+                    </select>
+                    <i class="fa-solid fa-caret-down select-arrow"></i>
+                </div>
+
+                <input type="text" class="search-input" placeholder="Search Amazon.in" aria-label="Search Amazon.in"
+                    autocomplete="off" />
+
+                <button type="submit" class="search-submit-btn" aria-label="Search Button">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+            <div class="nav-language nav-box" role="button" tabindex="0" title="Choose language">
+                <img src="https://upload.wikimedia.org/wikipedia/en/4/41/Flag_of_India.svg" alt="India Flag"
+                    class="flag-icon" />
+                <span class="lang-code">EN</span>
+                <i class="fa-solid fa-caret-down nav-caret"></i>
+            </div>
+
+            <div class="nav-account nav-box" role="button" tabindex="0">
+                <div class="nav-text-col">
+                    <span class="nav-line-1">Hello, Rakesh</span>
+                    <span class="nav-line-2">
+                        Account & Lists
+                        <i class="fa-solid fa-caret-down nav-caret"></i>
+                    </span>
+                </div>
+            </div>
+
+            <a href="#" class="nav-orders nav-box" aria-label="Returns and Orders">
+                <div class="nav-text-col">
+                    <span class="nav-line-1">Returns</span>
+                    <span class="nav-line-2">& Orders</span>
+                </div>
+            </a>
+
+            <a href="#" class="nav-cart nav-box" aria-label="Shopping Cart, 2 items">
+                <div class="cart-icon-wrap">
+                    <span class="cart-count">2</span>
+                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                </div>
+                <span class="cart-text">Cart</span>
+            </a>
+        </nav>
+
+        <div class="navbar-sub" aria-label="Secondary Navigation">
+            <div class="sub-left-group">
+
+                <a href="#" class="sub-link sub-all">
+                    <i class="fa-solid fa-bars"></i>
+                    <span>All</span>
+                </a>
+
+
+                <a href="#" class="sub-link">
+                    <span class="sub-rufus-pill">
+                        <span class="rufus-logo-dot"></span>
+                        Rufus
+                    </span>
+                </a>
+
+                <a href="#" class="sub-link">Fresh</a>
+                <a href="#" class="sub-link">Prime Video</a>
+                <a href="#" class="sub-link">Sell</a>
+                <a href="#" class="sub-link">Gift Cards</a>
+                <a href="#" class="sub-link">Amazon Pay</a>
+                <a href="#" class="sub-link">Buy Again</a>
+                <a href="#" class="sub-link">Today's Deals</a>
+                <a href="#" class="sub-link">Gift Ideas</a>
+            </div>
+
+            <div class="sub-right-promo">
+                <a href="#" class="promo-link" title="Great Indian Festival">
+                    <span class="promo-festive-icon">🪔</span>
+                    <span class="promo-text-bold">Great Indian Festival</span>
+                    <span class="promo-text-light">| Shop early deals now</span>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+</body>
+
+</html>
